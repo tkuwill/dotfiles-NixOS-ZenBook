@@ -3,7 +3,7 @@ set selection-clipboard clipboard
 set pages-per-row 1
 set scroll-page-aware "true"
 set adjust-open "best-fit"
-set font "SauceCodeProNerdFont 20"
+set font "Noto Sans CJK TC 15"
 set statusbar-bg                "#073642" # base02
 set window-title-page true
 set window-title-basename true
