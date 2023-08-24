@@ -55,6 +55,7 @@
   # services.xserver.enable = true;
 
   # Cursor size
+  environment.variables.XCURSOR_SIZE = "32";
   services.xserver.dpi = 128;
   services.xserver.upscaleDefaultCursor = true;
   # hyprland config
@@ -170,7 +171,7 @@
     glib
     gnome.adwaita-icon-theme
     # cursor
-    # comixcursors.Slim_Green
+    comixcursors.Slim_Green
     # polkit-authentication
     mate.mate-polkit
     # WM needed
