@@ -3,9 +3,11 @@
 {
 
   imports = [
-    ./imv.nix
     ./bat.nix
+    ./imv.nix
+    ./newsboat.nix
     ./swaylock.nix
+    ./tmux.nix
     ./zathura.nix
   ];
   # Home Manager needs a bit of information about you and the paths it should
