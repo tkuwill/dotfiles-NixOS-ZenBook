@@ -1,6 +1,6 @@
 auto-reload yes
 browser firefox
-include ~/.newsboat/colorcli.config
+include /nix/var/nix/profiles/system/sw/share/doc/newsboat/contrib/colorschemes/universal-color
 
 unbind-key j 
 unbind-key J

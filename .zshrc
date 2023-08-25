@@ -75,3 +75,7 @@ export LESS_TERMCAP_se=$'\e[0m'
 export LESS_TERMCAP_so=$'\e[01;33m'
 export LESS_TERMCAP_ue=$'\e[0m'
 export LESS_TERMCAP_us=$'\e[1;4;31m'
+
+# Don't let Home-manager manage zsh
+source "$HOME/.nix-profile/etc/profile.d/hm-session-vars.sh"
+# source "/etc/profiles/per-user/$USER/etc/profile.d/hm-session-vars.sh"
