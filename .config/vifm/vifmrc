@@ -306,9 +306,12 @@ nnoremap O :!dragon-drag-and-drop %f </dev/null &>/dev/null & <cr>
 nnoremap . za
 
 " Fuzzy search files
-nnoremap F :FZFfind <cr>
-"}}}
+nnoremap <c-f> :FZFfind <cr>
 
+
+" Start lazygit
+nnoremap <c-g> :!lazygit <cr>
+"}}}
 
 " {{{ Icons 
 " Filetypes/directories
