@@ -22,7 +22,7 @@ zstyle :compinstall filename '/home/will/.zshrc'
 
 zstyle ':completion:*' menu yes select
 # bindkeys and alias and some configs should be put after compinit.
-autoload -Uz compinit
+autoload -Uz compinit && compinit 
 compinit
 # End of lines added by compinstall
 # Lines configured by zsh-newuser-install
@@ -43,9 +43,8 @@ zle -N edit-command-line
 bindkey "^X^E" edit-command-line
 # End of lines configured by zsh-newuser-install
 
-alias lh="ls -lah "
+alias lh="ls -lah"
 alias la="ls -la"
-alias vimt="vim --noplugin"
 # alias chromium="chromium --force-device-scale-factor=1.3"
 alias musicDownloadTui="/home/will/shellscripts/musicDownloadTui.sh"
 alias vpnLocation="curl ipinfo.io/country"
