@@ -103,6 +103,7 @@
   programs.zsh.syntaxHighlighting.enable = true;
   programs.zsh.autosuggestions.enable = true;
   users.defaultUserShell = pkgs.zsh;
+  environment.pathsToLink = [ "/share/zsh" ];
   environment.shells = with pkgs; [ zsh ];
   # Bluetooth
   hardware.bluetooth.package = pkgs.bluez;
