@@ -9,6 +9,7 @@
     ./newsboat.nix
     ./swaylock.nix
     ./tmux.nix
+    ./waybar.nix
     ./zathura.nix
     ./zsh.nix
   ];
