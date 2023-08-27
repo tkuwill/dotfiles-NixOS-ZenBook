@@ -152,11 +152,19 @@
       #workspaces button {
       background: #11111b;
       color: #b4befe;
+      font-size: 6px;
+      padding-left: 1px;
+      padding-right: 1px;
+      margin-left: 0;
       }
 
       #workspaces button.active {
       background-color: #fba922;
       color: #000000;
+      font-size: 6px;
+      padding-left: 1px;
+      padding-right: 1px;
+      margin-left: 0;
       }
 
       #mode {
@@ -199,13 +207,9 @@
       font-family: Noto Sans CJK TC;
       padding-left: 10px;
       padding-right: 10px;
-
-
-      }
-      #window,
-      #workspaces {
       margin: 0 2px;
       }
+
       #submap {
       background-color: #f53c3c;
       padding: 0 10px;
