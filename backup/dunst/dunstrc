@@ -212,7 +212,7 @@
     max_icon_size = 32
 
     # Paths to default icons (only neccesary when not using recursive icon lookup)
-    icon_path = /usr/share/icons/gnome/16x16/status/:/usr/share/icons/gnome/16x16/devices/
+    icon_path = /run/current-system/sw/share/icons/Adwaita/32x32/status:/run/current-system/sw/share/icons/Adwaita/32x32/devices
 
     ### History ###
 
