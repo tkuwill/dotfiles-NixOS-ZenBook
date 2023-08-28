@@ -4,7 +4,9 @@
 
   imports = [
     ./bat.nix
+    ./dunst.nix
     ./foot.nix
+    ./hyprland.nix
     ./imv.nix
     ./newsboat.nix
     ./swaylock.nix
