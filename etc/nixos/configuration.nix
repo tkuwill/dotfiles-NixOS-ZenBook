@@ -61,6 +61,7 @@
   # hyprland config
   programs.hyprland.enable = true;
   programs.hyprland.xwayland.enable = true;
+  programs.hyprland.portalPackage = pkgs.xdg-desktop-portal-hyprland;
   # programs.hyprland.xwayland.hidpi = true;
   security.pam.services.swaylock = { };
   services.pipewire.enable = true;

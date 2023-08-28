@@ -3,7 +3,41 @@ dotfiles of NixOS on ZenBook
 
 ---
 
-Configured by nix and home-manager. (without flakes, hm is standalone mode).
+## Features
+
+Configured by **nix** and **home-manager**. (*without flakes*, hm is *standalone* mode).
+
+## Architecture
+
+- `~/.config`
+    - `home-manager`
+        - `bat.nix`
+        - `dunst.nix`
+        - `foot.nix`
+        - `home.nix` is for **gtk**, **cursor theme** and **font-config**.
+        - `hyprland.nix`
+        - `imv.nix`
+        - `newsboat.nix`
+        - `swaylock.nix`
+        - `tmux.nix`
+        - `waybar.nix`
+        - `zathura.nix`
+        - `zsh.nix`
+    - Other programs which cannot be configured by home-manager. Like, `fbterm`, `swappy`, `tofi`, `vifm`. Or some programs that I haven't used home-manager to configure, like `joshuto`, `mpv`.
+- `/etc/nixos/configuration.nix`
+- `~/.vimrc`
+- `~/.dwm`
+    - `lowbatremind.sh`
+    - `screenlight.sh`
+    - `volume.sh`
+- `~/shellscripts`
+    - `musicDownloadTui.sh`
+    - `reminder.sh`
+    - `timer2.sh`
+- `~/.local/share/fcitx5/rime/`
+    - `opencc` is the folder for emoji.
+    - `default.custom.yaml`
+    - `terra_pinyin.custom.yaml`
 ## Very Good nix example
 
 [~misterio/nix-config](https://git.sr.ht/~misterio/nix-config)
