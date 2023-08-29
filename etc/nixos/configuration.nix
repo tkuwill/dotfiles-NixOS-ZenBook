@@ -181,6 +181,7 @@
     dunst
     foot
     font-awesome
+    gedit
     hyprpaper
     pavucontrol
     symbola
