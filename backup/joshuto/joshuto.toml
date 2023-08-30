@@ -2,10 +2,12 @@
 scroll_offset = 6
 
 # If joshuto does not know how to open the file, it can resort to opening it via xdg settings
-xdg_open = true
+# xdg_open = true
+xdg_open = false
 
 # Fork xdg_open so you can continue using joshuto with application open
-xdg_open_fork = false
+# xdg_open_fork = false
+xdg_open_fork = true
 
 # Use system trash can instead of permanently removing files
 use_trash = true
@@ -13,8 +15,6 @@ use_trash = true
 # Watch for filesystem changes and update directory listings accordingly
 watch_files = true
 
-# The maximum file size to show a preview for
-max_preview_size = 2097152 # 2MB
 
 # Configurations related to the display
 [display]
@@ -22,7 +22,8 @@ max_preview_size = 2097152 # 2MB
 # Options include
 # - default
 # - hsplit
-mode = "default"
+# mode = "default"
+mode = "hsplit"
 
 # Collapse the preview window when there is no preview available
 collapse_preview = true
@@ -81,4 +82,6 @@ reverse = false
 # Optional list of command aliases (empty by default)
 [cmd_aliases]
 q = "quit"
+# tab
+[tab]
 # ...

@@ -5,7 +5,7 @@ audio_default	= [
 ]
 
 image_default	= [
-	{ command = "ristretto", fork = true, silent = true },
+	{ command = "imv-dir", fork = true, silent = true },
 ]
 
 video_default	= [
@@ -117,6 +117,7 @@ vim.inherit = "text_default"
 xml.inherit = "text_default"
 yaml.inherit	= "text_default"
 yml.inherit = "text_default"
+zshrc.inherit = "text_default"
 
 # pdf 
 pdf.inherit = "reader_default"

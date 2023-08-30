@@ -15,6 +15,7 @@ keymap = [
 	{ keys = [ "z", "h" ],		command = "toggle_hidden" },
 	{ keys = [ "ctrl+h" ],		command = "toggle_hidden" },
 	{ keys = [ "t", "i" ],		command = "tab_switch 1" },
+	{ keys = [ "backtab" ],		command = "tab_switch 1" },
 	{ keys = [ "t", "n" ],		command = "tab_switch -1" },
 
 	{ keys = [ "alt+1" ],		command = "tab_switch_index 1" },
