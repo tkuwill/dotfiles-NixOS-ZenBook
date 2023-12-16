@@ -50,10 +50,11 @@
     HandlePowerKey=ignore
     HandlePowerKeyLongPress=poweroff
   '';
-
+  nix.settings.experimental-features = [ "nix-command" "flakes" ];
   # Enable the X11 windowing system.
   # services.xserver.enable = true;
-
+  # Waydroid's config
+  virtualisation.waydroid.enable = true;
   # Cursor size
   environment.variables.XCURSOR_SIZE = "32";
   services.xserver.dpi = 128;
@@ -207,13 +208,16 @@
     joshuto
     jq # for json query
     killall
+    lzip
     lm_sensors
     lazygit
     libnotify
     neofetch
     newsboat
+    python3
     playerctl
     pngquant # png optimizer
+    parted # Create, destroy, resize, check, and copy partitions
     shellcheck
     tree
     tmux
@@ -225,7 +229,6 @@
     wcalc # calculator
     xdg-user-dirs
     # sys-tools
-    gparted
     # entertainment
     gpodder
     # Internet
