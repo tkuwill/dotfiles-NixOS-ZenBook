@@ -75,6 +75,7 @@
       windowrulev2 = float,class:^(firefox)$,title:^(Firefox — Sharing Indicator)$ 
       windowrulev2 = center,class:^(firefox)$,title:^(Firefox — Sharing Indicator)$ 
       windowrulev2 = maxsize [5] [5],class:^(firefox)$,title:^(Firefox — Sharing Indicator)$ 
+      windowrulev2 = noborder,class:^(Waydroid)$,title:^(Waydroid)$ 
       
       binde=, XF86AudioRaiseVolume, exec, /home/will/.dwm/volume.sh up
       binde=, XF86AudioLowerVolume, exec, /home/will/.dwm/volume.sh down
@@ -107,6 +108,7 @@
       bind=SUPER, P, exec,  tofi-run -c ~/.config/tofi/soy-milk | xargs hyprctl dispatch exec
       bind=SUPER,F,togglefloating
       bind=SUPER, M, exec, hyprctl dispatch fullscreen 1
+      bind=SUPER_SHIFT, F, exec, hyprctl dispatch fullscreen 0
       bind=SUPER, Space, movefocus, l
       bind=SUPER, K, movefocus, u
       bind=SUPER, J, movefocus, d
