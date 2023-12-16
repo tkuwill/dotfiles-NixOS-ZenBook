@@ -1,6 +1,12 @@
 { config, pkgs, ... }:
 
 {
+  nixpkgs = {
+    config = {
+      allowUnfree = true;
+      allowUnfreePredicate = (_: true);
+    };
+  };
 
   imports = [
     ./bat.nix
@@ -48,6 +54,7 @@
     # (pkgs.writeShellScriptBin "my-hello" ''
     #   echo "Hello, ${config.home.username}!"
     # '')
+    pkgs.parted
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
