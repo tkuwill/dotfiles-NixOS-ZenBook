@@ -36,7 +36,7 @@
       general {
         gaps_in = 0
         gaps_out = 0
-        border_size = 6;
+        border_size = 6
         col.active_border = rgba(33ccffee) rgba(00ff99ee) 45deg
         col.inactive_border = rgba(595959aa)
         layout = master
