@@ -5,7 +5,7 @@ dotfiles of NixOS on ZenBook
 
 ## Features
 
-Configured by **nix** and **home-manager**. (*without flakes*, hm is *standalone* mode).
+Configured by **nix** and **home-manager**. (hm is *standalone* mode).
 
 ## Architecture
 
@@ -21,9 +21,11 @@ Configured by **nix** and **home-manager**. (*without flakes*, hm is *standalone
         - `swaylock.nix`
         - `tmux.nix`
         - `waybar.nix`
+        - `yazi.nix` -- a TUI file manager
         - `zathura.nix`
+        - `zoxide.nix`
         - `zsh.nix`
-    - Other programs which cannot be configured by home-manager. Like, `fbterm`, `swappy`, `tofi`, `vifm`. Or some programs that I haven't used home-manager to configure, like `joshuto`, `mpv`.
+    - Other programs which cannot be configured by home-manager. Like, `fbterm`, `swappy`, `tofi`, `vifm`. Or some programs that I haven't used home-manager to configure, like `mpv`.
 - `/etc/nixos/configuration.nix`
 - `~/.vimrc`
 - `~/.dwm`
@@ -38,6 +40,9 @@ Configured by **nix** and **home-manager**. (*without flakes*, hm is *standalone
     - `opencc` is the folder for emoji.
     - `default.custom.yaml`
     - `terra_pinyin.custom.yaml`
-## Very Good nix example
+
+## A key for yazi 
+`~` is the key for help. If forgetting the keybinds, it is a good cheatsheet.
+## Some nix example
 
 [~misterio/nix-config](https://git.sr.ht/~misterio/nix-config)
