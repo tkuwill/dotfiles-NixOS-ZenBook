@@ -6,6 +6,9 @@
     mouse = true;
     terminal = "tmux-256color";
     extraConfig = ''
+      set -g allow-passthrough on
+      set -ga update-environment TERM
+      set -ga update-environment TERM_PROGRAM
       set -g set-titles on
       set -g set-titles-string '#{pane_current_command} - #T'
       set-option -g mouse on
