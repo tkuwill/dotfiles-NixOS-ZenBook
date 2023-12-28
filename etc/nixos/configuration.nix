@@ -219,6 +219,7 @@
     parted # Create, destroy, resize, check, and copy partitions
     shellcheck
     tree
+    tlrc # For tldr, a modern and simpler man.
     tmux
     unar
     vifm
