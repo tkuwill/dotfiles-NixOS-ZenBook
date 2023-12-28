@@ -205,7 +205,6 @@
     imv # cli-img-viewer
     intel-gpu-tools
     imagemagick # image edit command line
-    joshuto
     jq # for json query
     killall
     lzip
