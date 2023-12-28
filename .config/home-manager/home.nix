@@ -18,7 +18,9 @@
     ./swaylock.nix
     ./tmux.nix
     ./waybar.nix
+    ./yazi.nix
     ./zathura.nix
+    ./zoxide.nix
     ./zsh.nix
   ];
   # Home Manager needs a bit of information about you and the paths it should
