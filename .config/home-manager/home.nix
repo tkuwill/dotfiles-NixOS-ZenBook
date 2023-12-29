@@ -10,7 +10,7 @@
 
   imports = [
     ./bat.nix
-    ./bottom.nix
+    ./bottom/bottom.nix
     ./dunst.nix
     ./foot.nix
     ./hyprland.nix
@@ -19,7 +19,7 @@
     ./swaylock.nix
     ./tmux.nix
     ./waybar.nix
-    ./yazi.nix
+    ./yazi/yazi.nix
     ./zathura.nix
     ./zoxide.nix
     ./zsh.nix
@@ -73,7 +73,8 @@
     #   org.gradle.console=verbose
     #   org.gradle.daemon.idletimeout=3600000
     # '';
-    "${config.xdg.configHome}/bottom/bottom.toml".text = builtins.readFile ./bottom.toml;
+    "${config.xdg.configHome}/bottom/bottom.toml".text = builtins.readFile ./bottom/bottom.toml;
+    "${config.xdg.configHome}/yazi/keymap.toml".text = builtins.readFile ./yazi/keymap.toml;
   };
 
   # You can also manage environment variables but you will have to manually
