@@ -10,6 +10,7 @@
 
   imports = [
     ./bat.nix
+    ./bottom.nix
     ./dunst.nix
     ./foot.nix
     ./hyprland.nix
@@ -72,6 +73,7 @@
     #   org.gradle.console=verbose
     #   org.gradle.daemon.idletimeout=3600000
     # '';
+    "${config.xdg.configHome}/bottom/bottom.toml".text = builtins.readFile ./bottom.toml;
   };
 
   # You can also manage environment variables but you will have to manually
