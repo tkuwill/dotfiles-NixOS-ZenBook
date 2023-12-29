@@ -21,10 +21,15 @@ Configured by **nix** and **home-manager**. (hm is *standalone* mode).
         - `swaylock.nix`
         - `tmux.nix`
         - `waybar.nix`
-        - `yazi.nix` -- a TUI file manager
         - `zathura.nix`
         - `zoxide.nix`
         - `zsh.nix`
+            - `bottom`
+                - `bottom.nix`
+                - `bottom.toml`
+            - `yazi`
+                - `yazi.nix`
+                - `keymap.toml`
     - Other programs which cannot be configured by home-manager. Like, `fbterm`, `swappy`, `tofi`, `vifm`. Or some programs that I haven't used home-manager to configure, like `mpv`.
 - `/etc/nixos/configuration.nix`
 - `~/.vimrc`
@@ -44,5 +49,7 @@ Configured by **nix** and **home-manager**. (hm is *standalone* mode).
 ## A key for yazi 
 `~` is the key for help. If forgetting the keybinds, it is a good cheatsheet.
 ## Some nix example
+
+[wimpysworld/nix-config](https://github.com/wimpysworld/nix-config)
 
 [~misterio/nix-config](https://git.sr.ht/~misterio/nix-config)
