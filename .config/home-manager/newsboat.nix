@@ -28,6 +28,14 @@
         url = "https://alittleeditor.com/rss.xml";
       }
       {
+        tags = [ "Must Read" ];
+        url = "https://ivonblog.com/index.xml";
+      }
+      {
+        tags = [ "tech" ];
+        url = "https://www.macworld.com/en-us/feed";
+      }
+      {
         tags = [ "tech" ];
         url = "http://feeds.feedburner.com/playpc";
       }
