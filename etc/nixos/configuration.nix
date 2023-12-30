@@ -201,7 +201,6 @@
     dialog
     fbterm # for cjk in tty
     git
-    htop
     imv # cli-img-viewer
     intel-gpu-tools
     imagemagick # image edit command line
@@ -222,7 +221,6 @@
     tlrc # For tldr, a modern and simpler man.
     tmux
     unar
-    vifm
     wget
     wirelesstools # for internet test
     w3m
