@@ -198,6 +198,7 @@ fileviewer <video/*>
 " Images
 filetype *.jpg,*.jpeg,*.png,*.gif
        \ {View in feh}
+       \ imv-dir %c %i >/dev/null
        \ feh -Z %d --start-at %d/%c 2>/dev/null
 fileviewer <image/*>
         \ %pc
