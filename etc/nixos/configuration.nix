@@ -237,6 +237,7 @@
         "--ozone-platform-hint=auto"
         # "--gtk-version=4"
         "--enable-wayland-ime"
+        "--enable-features=TouchpadOverscrollHistoryNavigation"
       ];
     })
     thunderbird
