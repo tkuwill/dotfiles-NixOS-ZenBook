@@ -5,9 +5,12 @@
 if (pgrep tofi > /dev/null); then
   killall -q tofi
 else
-  case $(printf "%s\n" "Cancel" "Notification center" "Clean all notifications" "Do not disturb" "Normal" | tofi -c ~/.config/tofi/soy-milk) in
+  case $(printf "%s\n" "Cancel" "Notification center" "Close all notifications" "Clean all notifications" "Do not disturb" "Normal" | tofi -c ~/.config/tofi/soy-milk) in
     "Cancel")
       exit 0
+      ;;
+    "Close all notifications")
+      dunstctl close-all
       ;;
     "Notification center")
       /home/will/shellscripts/notificationcenter.sh
