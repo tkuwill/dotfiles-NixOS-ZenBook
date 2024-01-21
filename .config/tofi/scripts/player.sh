@@ -9,6 +9,10 @@ now_play() {
 
 now_play
 
+turls() {
+  cliphist list | sed '1 q' | awk '{print $2}'
+}
+
 urls() {
   cliphist list | sed '1 q' | awk '{print $2}'
 }
@@ -24,7 +28,7 @@ burls
 if (pgrep tofi > /dev/null); then
   killall -q tofi
 else
-  case $(printf "%s\n" "Cancel" "Now playing" "Open with mpv Yt" "Yt live" "Open with mpv BiliBili" "BLive" "Play-pause" "Next" "Prev" | tofi -c ~/.config/tofi/soy-milk) in
+  case $(printf "%s\n" "Cancel" "Now playing" "Open with mpv Yt" "Yt live" "Twitch live" "Open with mpv BiliBili" "BLive" "Play-pause" "Next" "Prev" | tofi -c ~/.config/tofi/soy-milk) in
     "Cancel")
       exit 0
       ;;
@@ -36,6 +40,9 @@ else
       ;;
     "Yt live")
       mpv --cache=no "$(urls)"
+      ;;
+    "Twitch live")
+      streamlink -p mpv -a '--no-cache' --twitch-disable-ads "$(turls)" 1080p60
       ;;
     "Open with mpv BiliBili")
       mpv --referrer="https://www.bilibili.com" "$(burls)"
