@@ -75,6 +75,9 @@
         scripts = with self.mpvScripts; [
           mpris
           mpv-playlistmanager
+          quality-menu
+          thumbfast
+          uosc
         ];
       };
     })
