@@ -1,0 +1,112 @@
+[
+  {
+    "battery": {
+      "format": "{time} {icon}",
+      "format-alt": "{capacity}% {icon}",
+      "format-charging": "{capacity}% 🗲",
+      "format-icons": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "format-plugged": "{capacity}% ",
+      "interval": 20,
+      "states": {
+        "critical": 20,
+        "warning": 25
+      }
+    },
+    "clock": {
+      "calendar": {
+        "format": {
+          "days": "<span color='#ecc6d9'><b>{}</b></span>",
+          "months": "<span color='#ffead3'><b>{}</b></span>",
+          "today": "<span color='#ff6699'><b><u>{}</u></b></span>",
+          "weekdays": "<span color='#ffcc66'><b>{}</b></span>",
+          "weeks": "<span color='#99ffdd'><b>W{}</b></span>"
+        },
+        "mode": "months"
+      },
+      "format": "{:%H:%M:%S}",
+      "format-alt": "{:%Y-%m-%d(%a)}",
+      "interval": 1,
+      "timezone": "Asia/Taipei",
+      "tooltip-format": "<tt><small>{calendar}</small></tt>"
+    },
+    "custom/copy": {
+      "format": "󰗊",
+      "on-click-right": "/home/will/.config/tofi/scripts/clip.sh",
+      "on-double-click-middle": "/home/will/.config/tofi/scripts/clipclean.sh",
+      "tooltip": "false"
+    },
+    "custom/shwork": {
+      "format": "󰕮",
+      "on-click": "/home/will/.config/tofi/scripts/shwork.sh",
+      "tooltip": "false"
+    },
+    "height": 32,
+    "hyprland/submap": {
+      "format": "{}",
+      "max-length": 30,
+      "tooltip": "false"
+    },
+    "hyprland/window": {
+      "format": "{}"
+    },
+    "hyprland/workspaces": {
+      "active-only": "false",
+      "format": " {icon} ",
+      "format-icons": {
+        "active": "",
+        "default": "󰧞",
+        "urgent": ""
+      },
+      "on-click": "activate"
+    },
+    "idle_inhibitor": {
+      "format": "{icon}",
+      "format-icons": {
+        "activated": [
+          "  󰒳"
+        ],
+        "deactivated": [
+          "  󰒲"
+        ]
+      }
+    },
+    "layer": "top",
+    "modules-center": [
+      "hyprland/window"
+    ],
+    "modules-left": [
+      "hyprland/workspaces",
+      "hyprland/submap",
+      "custom/shwork",
+      "custom/copy",
+      "pulseaudio"
+    ],
+    "modules-right": [
+      "idle_inhibitor",
+      "battery",
+      "tray",
+      "clock"
+    ],
+    "position": "top",
+    "pulseaudio": {
+      "format": "VOL {volume}%{icon} {format_source}",
+      "format-bluetooth": "{volume}% {icon} {format_source}",
+      "format-bluetooth-muted": " {icon} {format_source}",
+      "format-muted": "VOL 🔇 {format_source}",
+      "format-source": "{volume}%",
+      "format-source-muted": "",
+      "on-click": "pavucontrol"
+    },
+    "spacing": 4,
+    "tray": {
+      "icon-size": 21,
+      "spacing": 5
+    }
+  }
+]
