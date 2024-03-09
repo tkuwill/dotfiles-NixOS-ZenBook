@@ -45,7 +45,7 @@ else
       streamlink -p mpv -a '--no-cache' --twitch-disable-ads "$(turls)" 1080p60
       ;;
     "Open with mpv BiliBili")
-      mpv --referrer="https://www.bilibili.com" "$(burls)"
+      yt-dlp --cookies-from-browser firefox -o - "$(burls)" | mpv -
       ;;
     "BLive")
       mpv --cache=no --referrer="https://www.bilibili.com" "$(burls)"

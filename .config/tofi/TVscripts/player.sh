@@ -24,7 +24,7 @@ burls
 if (pgrep tofi > /dev/null); then
   killall -q tofi
 else
-  case $(printf "%s\n" "Cancel" "Now playing" "Open with mpv Yt" "Yt live" "Open with mpv BiliBili" "BLive" "Play-pause" "Next" "Prev" | tofi -c ~/.config/tofi/soy-milkTV) in
+  case $(printf "%s\n" "Cancel" "Now playing" "Open with mpv Yt" "Yt live" "Twitch live" "Open with mpv BiliBili" "BLive" "Play-pause" "Next" "Prev" | tofi -c ~/.config/tofi/soy-milk) in
     "Cancel")
       exit 0
       ;;
@@ -37,8 +37,11 @@ else
     "Yt live")
       mpv --cache=no "$(urls)"
       ;;
+    "Twitch live")
+      streamlink -p mpv -a '--no-cache' --twitch-disable-ads "$(turls)" 1080p60
+      ;;
     "Open with mpv BiliBili")
-      mpv --referrer="https://www.bilibili.com" "$(burls)"
+      yt-dlp --cookies-from-browser firefox -o - "$(burls)" | mpv -
       ;;
     "BLive")
       mpv --cache=no --referrer="https://www.bilibili.com" "$(burls)"
