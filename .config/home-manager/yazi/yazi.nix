@@ -6,6 +6,9 @@
       log = {
         enabled = false;
       };
+      headsup = {
+        disable_exec_warn = true;
+      };
       manager = {
         layout = [ 2 3 3 ];
         show_hidden = true;
