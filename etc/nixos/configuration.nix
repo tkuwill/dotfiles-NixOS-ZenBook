@@ -190,7 +190,6 @@
     pavucontrol
     symbola
     swaylock-effects
-    tofi
     fuzzel
     waybar
     wl-clipboard
