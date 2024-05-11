@@ -102,7 +102,7 @@
       bind=SUPER_SHIFT, C, killactive, 
       bind=SUPER_SHIFT, U, exit, 
       bind=SUPER, E, exec, thunar
-      bind=SUPER, P, exec,  tofi-run -c ~/.config/tofi/soy-milk | xargs hyprctl dispatch exec
+      bind=SUPER, P, exec, fuzzel 
       bind=SUPER,F,togglefloating
       bind=SUPER, M, exec, hyprctl dispatch fullscreen 1
       bind=SUPER_SHIFT, F, exec, hyprctl dispatch fullscreen 0

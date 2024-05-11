@@ -100,9 +100,9 @@
 
   # Service for polkit
   security.polkit.enable = true;
-  # fzf's config
-  programs.fzf.keybindings = true;
-  programs.fzf.fuzzyCompletion = true;
+  # fzf's config this two configs are not availible in nix
+  # programs.fzf.keybindings = true;
+  # programs.fzf.fuzzyCompletion = true;
   # zsh's config
   programs.zsh.enable = true;
   programs.zsh.syntaxHighlighting.enable = true;
@@ -154,9 +154,9 @@
   hardware.pulseaudio.enable = true;
 
   # Enable touchpad support (enabled default in most desktopManager).
-  services.xserver.libinput.enable = true;
-  services.xserver.libinput.mouse.naturalScrolling = true;
-  services.xserver.libinput.touchpad.naturalScrolling = true;
+  services.libinput.enable = true;
+  services.libinput.mouse.naturalScrolling = true;
+  services.libinput.touchpad.naturalScrolling = true;
 
   # screen backlight
   programs.light.enable = true;
@@ -191,6 +191,7 @@
     symbola
     swaylock-effects
     tofi
+    fuzzel
     waybar
     wl-clipboard
     # screenshots tools
