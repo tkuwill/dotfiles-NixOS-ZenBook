@@ -83,20 +83,19 @@
       binde=, XF86AudioNext, exec, playerctl next
       binde=, XF86AudioPrev, exec, playerctl previous
       
-      bind=SUPER_SHIFT, Q, exec, /home/will/.config/tofi/scripts/shot.sh
+      bind=SUPER_SHIFT, Q, exec, /home/will/.config/fuzzel/scripts/shot.sh
       bind=SUPER_SHIFT, A, exec, grim && mv ~/Pictures/*_grim.png ~/Pictures/screenshots && dunstify -a "changeVolume" -i /home/will/Pictures/sysicon/camera.png -t 3500 "Saved to ~/Pic./screenshots" 
       bind=SUPER_SHIFT, Z, exec, grim -g "$(slurp -d)" && mv ~/Pictures/*_grim.png ~/Pictures/screenshots && dunstify -a "changeVolume" -i /home/will/Pictures/sysicon/camera.png -t 3500 "Saved to ~/Pic./screenshots" 
-      bind=SUPER_SHIFT, S, exec, /home/will/.config/tofi/scripts/powermenu.sh
-      bind=SUPER_SHIFT, P, exec, /home/will/.config/tofi/scripts/player.sh
-      bind=SUPER_SHIFT, L, exec, /home/will/.config/tofi/scripts/calendar.sh
-      bind=SUPER_SHIFT, B, exec, /home/will/.config/tofi/scripts/sys.sh
-      bind=SUPER_SHIFT, D, exec, /home/will/.config/tofi/scripts/donotdisturb.sh
-      bind=SUPER_SHIFT, O, exec, /home/will/.config/tofi/scripts/browser.sh
-      bind=SUPER, W, exec, /home/will/.config/tofi/scripts/shwork.sh
+      bind=SUPER_SHIFT, S, exec, /home/will/.config/fuzzel/scripts/powermenu.sh
+      bind=SUPER_SHIFT, P, exec, /home/will/.config/fuzzel/scripts/player.sh
+      bind=SUPER_SHIFT, L, exec, /home/will/.config/fuzzel/scripts/calendar.sh
+      bind=SUPER_SHIFT, B, exec, /home/will/.config/fuzzel/scripts/sys.sh
+      bind=SUPER_SHIFT, D, exec, /home/will/.config/fuzzel/scripts/donotdisturb.sh
+      bind=SUPER, W, exec, /home/will/.config/fuzzel/scripts/shwork.sh
       bind=SUPER, A, exec, hyprctl dispatch workspace e-1
       bind=SUPER, Z, exec, hyprctl dispatch workspace e+1
-      bind=SUPER, Tab, exec, /home/will/.config/tofi/scripts/clientswitcher.sh
-      bind=SUPER, V, exec, cliphist list | tofi -c ~/.config/tofi/dos | cliphist decode | wl-copy
+      bind=SUPER, Tab, exec, /home/will/.config/fuzzel/scripts/clientswitcher.sh
+      bind=SUPER, V, exec, /home/will/.config/fuzzel/scripts/clip.sh
       
       bind=SUPER_SHIFT, Return, exec, foot
       bind=SUPER_SHIFT, C, killactive, 
