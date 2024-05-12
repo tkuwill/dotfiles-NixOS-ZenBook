@@ -30,7 +30,13 @@ Configured by **nix** and **home-manager**. (hm is *standalone* mode).
             - `yazi`
                 - `yazi.nix`
                 - `keymap.toml`
-    - Other programs which cannot be configured by home-manager. Like, `fbterm`, `swappy`, `tofi`, `vifm`. Or some programs that I haven't used home-manager to configure, like `mpv`.
+            - `mpv`
+                - `script-opts`
+                    - `quality-menu.conf`
+                    - `thumbfast.conf`
+                - `input.conf`
+                - `mpv.conf`
+    - Other programs which cannot be configured by home-manager. Like, `fbterm`, `swappy`, `tofi`, `vifm`. Or some programs that I haven't used home-manager to configure, like `fuzzel`.
 - `/etc/nixos/configuration.nix`
 - `~/.vimrc`
 - `~/.dwm`
