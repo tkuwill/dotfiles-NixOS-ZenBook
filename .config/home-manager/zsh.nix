@@ -51,6 +51,7 @@
       lh = "ls -lah";
       la = "ls -la";
       musicDownloadTui = "/home/will/shellscripts/musicDownloadTui.sh";
+      fzfmenu = "/home/will/shellscripts/fzfmenu";
       timer = "/home/will/shellscripts/timer2.sh";
       vpnLocation = "curl ipinfo.io/country";
       vpnCountry = "curl ifconfig.co/country";
