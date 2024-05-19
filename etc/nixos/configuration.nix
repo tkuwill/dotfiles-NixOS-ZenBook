@@ -53,6 +53,14 @@
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
   # Enable the X11 windowing system.
   # services.xserver.enable = true;
+  # FOR gnome
+  services.xserver =
+    {
+      enable = true;
+      displayManager.gdm.enable = true;
+      desktopManager.gnome.enable = true;
+    };
+
   # Waydroid's config
   virtualisation.waydroid.enable = true;
   # Cursor size
@@ -232,7 +240,7 @@
     xdg-user-dirs
     # sys-tools
     # entertainment
-    gpodder
+    gnome-podcasts
     # Internet
     firefox
     # chromium
@@ -339,6 +347,25 @@
     "Noto Color Emoji"
 
   ];
+  # Excluding some GNOME applications from the default install
+  environment.gnome.excludePackages = (with pkgs; [
+    gnome-photos
+    gnome-tour
+    gnome-console
+  ]) ++ (with pkgs.gnome; [
+    cheese
+    gnome-music
+    gnome-maps
+    gnome-terminal
+    epiphany
+    geary
+    totem
+    tali
+    iagno
+    hitori
+    atomix
+    nautilus
+  ]);
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
