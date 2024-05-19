@@ -83,25 +83,25 @@
       binde=, XF86AudioNext, exec, playerctl next
       binde=, XF86AudioPrev, exec, playerctl previous
       
-      bind=SUPER_SHIFT, Q, exec, /home/will/.config/fuzzel/scripts/shot.sh
+      bind=SUPER_SHIFT, Q, exec, [float;noanim;rounding 8;size 500 150] /home/will/.config/fzfmenu/scripts/shot.sh
       bind=SUPER_SHIFT, A, exec, grim && mv ~/Pictures/*_grim.png ~/Pictures/screenshots && dunstify -a "changeVolume" -i /home/will/Pictures/sysicon/camera.png -t 3500 "Saved to ~/Pic./screenshots" 
       bind=SUPER_SHIFT, Z, exec, grim -g "$(slurp -d)" && mv ~/Pictures/*_grim.png ~/Pictures/screenshots && dunstify -a "changeVolume" -i /home/will/Pictures/sysicon/camera.png -t 3500 "Saved to ~/Pic./screenshots" 
-      bind=SUPER_SHIFT, S, exec, /home/will/.config/fuzzel/scripts/powermenu.sh
-      bind=SUPER_SHIFT, P, exec, /home/will/.config/fuzzel/scripts/player.sh
-      bind=SUPER_SHIFT, L, exec, /home/will/.config/fuzzel/scripts/calendar.sh
-      bind=SUPER_SHIFT, B, exec, /home/will/.config/fuzzel/scripts/sys.sh
-      bind=SUPER_SHIFT, D, exec, /home/will/.config/fuzzel/scripts/donotdisturb.sh
+      bind=SUPER_SHIFT, S, exec, [float;noanim;rounding 8;size 500 250] /home/will/.config/fzfmenu/scripts/powermenu.sh
+      bind=SUPER_SHIFT, P, exec, [float;noanim;rounding 8;size 500 200] /home/will/.config/fzfmenu/scripts/player.sh
+      bind=SUPER_SHIFT, L, exec, [float;noanim;rounding 8;size 300 100] /home/will/.config/fzfmenu/scripts/calendar.sh
+      bind=SUPER_SHIFT, B, exec, [float;noanim;rounding 8;size 300 200] /home/will/.config/fzfmenu/scripts/sys.sh
+      bind=SUPER_SHIFT, D, exec, [float;noanim;rounding 8;size 300 250] /home/will/.config/fzfmenu/scripts/donotdisturb.sh
       bind=SUPER, W, exec, /home/will/.config/fuzzel/scripts/shwork.sh
       bind=SUPER, A, exec, hyprctl dispatch workspace e-1
       bind=SUPER, Z, exec, hyprctl dispatch workspace e+1
-      bind=SUPER, Tab, exec, /home/will/.config/fuzzel/scripts/clientswitcher.sh
-      bind=SUPER, V, exec, /home/will/.config/fuzzel/scripts/clip.sh
+      bind=SUPER, Tab, exec, [float;noanim;rounding 8;size 600 400] /home/will/.config/fzfmenu/scripts/clientswitcher.sh
+      bind=SUPER, V, exec, [float;noanim;rounding 8;size 600 400] /home/will/.config/fzfmenu/scripts/clip.sh
       
       bind=SUPER_SHIFT, Return, exec, foot
       bind=SUPER_SHIFT, C, killactive, 
       bind=SUPER_SHIFT, U, exit, 
       bind=SUPER, E, exec, thunar
-      bind=SUPER, P, exec, fuzzel 
+      bind=SUPER, P, exec, [float;noanim;rounding 8;size 500 500] j4-dmenu-desktop --display-binary --no-generic --term=xterm --usage-log=$HOME/.j4-dmenu-desktop.log --dmenu='~/shellscripts/fzfmenu'
       bind=SUPER,F,togglefloating
       bind=SUPER, M, exec, hyprctl dispatch fullscreen 1
       bind=SUPER_SHIFT, F, exec, hyprctl dispatch fullscreen 0
