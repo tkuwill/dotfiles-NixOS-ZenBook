@@ -40,7 +40,7 @@ function player {
     elif [[ $selected = "Open_with_mpv_BiliBili" ]]; then 
         yt-dlp --cookies-from-browser firefox -o - "$(burls)" | mpv -
     elif [[ $selected = "BLive" ]]; then 
-        mpv --cache=no --referrer="https://www.bilibili.com" "$(burls)"
+	yt-dlp --cookies-from-browser firefox -o - "$(burls)" | mpv --no-cache -
     elif [[ $selected = "Cancel" ]]; then 
         return
     fi

@@ -183,6 +183,7 @@
   # $ nix search wget
   nixpkgs.config.allowUnfree = true;
   environment.systemPackages = with pkgs; [
+    niri
     vim-full # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
     ## icon theme
     glib
@@ -236,6 +237,7 @@
     tree
     tlrc # For tldr, a modern and simpler man.
     tmux
+    zellij
     unar
     wget
     wirelesstools # for internet test
