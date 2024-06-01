@@ -75,6 +75,9 @@
   security.pam.services.swaylock = { };
   services.pipewire.enable = true;
   services.pipewire.wireplumber.enable = true;
+  #river 
+  programs.river.enable = true;
+
 
   # Waybar, mpv's custom builds
   nixpkgs.overlays = [
@@ -199,6 +202,7 @@
     symbola
     swaylock-effects
     fuzzel
+    j4-dmenu-desktop
     waybar
     wl-clipboard
     # screenshots tools
@@ -240,7 +244,7 @@
     xdg-user-dirs
     # sys-tools
     # entertainment
-    gnome-podcasts
+    gpodder
     # Internet
     firefox
     # chromium
@@ -300,8 +304,6 @@
     #     obs-pipewire-audio-capture
     #   ];
     # })
-
-
 
   ];
 
