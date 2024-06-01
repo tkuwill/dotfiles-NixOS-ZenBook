@@ -7,7 +7,7 @@
 
 function notification {
     options="Cancel\nNotification center\nClose all notifications\nClean all notifications\nDo not disturb\nNormal"
-    selected=$(echo -e $options | fuzzel -d -p "Notification Mode ")
+    selected=$(echo -e $options | fuzzel --layer=overlay -d -p "Notification Mode ")
     if [[ $selected = "Do not disturb" ]]; then 
         notify-send -i /home/will/Pictures/sysicon/bell.png -u critical -t 3000 "Do Not Disturb is now ON." && sleep 1s && dunstctl set-paused true
     elif [[ $selected = "Close all notifications" ]]; then 

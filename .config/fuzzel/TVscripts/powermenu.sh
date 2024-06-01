@@ -7,7 +7,7 @@ function ck {
 
 function powermenu {
     options="Cancel\nLock\nSuspend\nLog Out\nShutdown\nRestart"
-    selected=$(echo -e $options | fuzzel --config ~/.config/fuzzel/TVfuzzel.ini -d -p "What do you want to do ? ")
+    selected=$(echo -e $options | fuzzel --config ~/.config/fuzzel/TVfuzzel.ini --layer=overlay -d -p "What do you want to do ? ")
     if [[ $selected = "Shutdown" ]]; then 
 	notify-send -i /home/will/Pictures/sysicon/power.png -u critical -t 0 "Now time is $(ck) . 
 ASUS 'll be shutdown in 1 min. Use 'shutdown -c' to cancel." && shutdown

@@ -22,7 +22,7 @@ function burls {
 
 function player {
     options="Cancel\nPlay-pause\nNext\nPrev\nNow_playing\nOpen_with_mpv_Yt\nYt live\nTwitch live\nOpen_with_mpv_BiliBili\nBLive"
-    selected=$(echo -e $options | fuzzel -d -p "playerctl ")
+    selected=$(echo -e $options | fuzzel --layer=overlay -d -p "playerctl ")
     if [[ $selected = "Play-pause" ]]; then 
         playerctl play-pause    
     elif [[ $selected = "Next" ]]; then 

@@ -43,7 +43,7 @@ function bat_temp {
 
 function sysinfo {
     options="Cancel\nMemory\nBAT-remaining\ncpu_temp\nBAT_temp"
-    selected=$(echo -e $options | fuzzel -d -p "System info ")
+    selected=$(echo -e $options | fuzzel --layer=overlay -d -p "System info ")
     if [[ $selected = "Memory" ]]; then 
         dunstify -a "changeVolume" -i /home/will/Pictures/sysicon/ram.png -t 8000 "$(mem)" 
     elif [[ $selected = "BAT-remaining" ]]; then 
