@@ -12,7 +12,7 @@
     "custom/space": {
 	"interval": 1,
 	"exec": "niri msg workspaces | grep '*'",
-	"on-click-left": "/home/will/.config/fuzzel/scripts/shwork.sh",
+	"on-click": "/home/will/.config/fuzzel/scripts/shwork.sh",
     },
     "custom/title": {
 	"interval": 1,
