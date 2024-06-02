@@ -57,6 +57,13 @@ button:hover {
     border-bottom: 3px solid #ffffff;
 }
 
+#custom-space {
+    background-color: #fba922;
+    padding: 0 10px;
+    color: #000000;
+
+}
+
 #custom-title {
     font-family: Noto Sans CJK TC;
     padding-left: 10px;

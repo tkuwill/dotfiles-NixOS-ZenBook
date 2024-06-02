@@ -5,10 +5,14 @@
     // "width": 1280, // Waybar width
     "spacing": 4, // Gaps between modules (4px)
     // Choose the order of the modules
-    "modules-left": ["custom/copy", "pulseaudio"],
+    "modules-left": ["custom/space", "custom/copy", "pulseaudio"],
     "modules-center": ["custom/title"],
     "modules-right": ["battery", "tray", "clock"],
     // Modules configuration
+    "custom/space": {
+	"interval": 1,
+	"exec": "niri msg workspaces | grep '*'"
+    },
     "custom/title": {
 	"interval": 1,
 	"exec": "niri msg focused-window | sed '1 d' | sed '2 d'"
