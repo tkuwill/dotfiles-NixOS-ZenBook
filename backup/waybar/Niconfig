@@ -11,7 +11,8 @@
     // Modules configuration
     "custom/space": {
 	"interval": 1,
-	"exec": "niri msg workspaces | grep '*'"
+	"exec": "niri msg workspaces | grep '*'",
+	"on-click-left": "/home/will/.config/fuzzel/scripts/shwork.sh",
     },
     "custom/title": {
 	"interval": 1,
@@ -35,9 +36,9 @@
         "format-alt": "{:%Y-%m-%d(%a)}",
         "tooltip-format": "<tt><small>{calendar}</small></tt>",
 	"calendar": {
-                  "mode"          : "months",
+                  "mode"          : "month",
                   "format": {
-                              "months":     "<span color='#ffead3'><b>{}</b></span>",
+                              "month":     "<span color='#ffead3'><b>{}</b></span>",
                               "days":       "<span color='#ecc6d9'><b>{}</b></span>",
                               "weeks":      "<span color='#99ffdd'><b>W{}</b></span>",
                               "weekdays":   "<span color='#ffcc66'><b>{}</b></span>",
