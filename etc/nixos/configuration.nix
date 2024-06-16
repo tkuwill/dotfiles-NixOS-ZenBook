@@ -60,9 +60,20 @@
       displayManager.gdm.enable = true;
       desktopManager.gnome.enable = true;
     };
+  # QEMU'sconfig
+  virtualisation.libvirtd.enable = true;
+  programs.virt-manager.enable = true;
+  # virtualbox
+  # virtualisation.virtualbox.host.enableKvm = true;
+  # virtualisation.virtualbox.host.enableHardening = false;
+  # virtualisation.virtualbox.host.addNetworkInterface = false;
+  # virtualisation.virtualbox.host.enableExtensionPack = true;
+  # virtualisation.virtualbox.guest.enable = true;
+  # virtualisation.virtualbox.host.enable = true;
+
 
   # Waydroid's config
-  virtualisation.waydroid.enable = true;
+  virtualisation.waydroid.enable = false;
   # Cursor size
   environment.variables.XCURSOR_SIZE = "32";
   services.xserver.dpi = 128;
@@ -76,7 +87,7 @@
   services.pipewire.enable = true;
   services.pipewire.wireplumber.enable = true;
   #river 
-  programs.river.enable = true;
+  # programs.river.enable = true;
 
 
   # Waybar, mpv's custom builds
@@ -174,7 +185,7 @@
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.will = {
     isNormalUser = true;
-    extraGroups = [ "wheel" "audio" "video" "networkmanager" "input" ]; # Enable ‘sudo’ for the user.
+    extraGroups = [ "wheel" "audio" "video" "networkmanager" "input" "libvirtd" "kvm" "vboxusers" ]; # Enable ‘sudo’ for the user.
     packages = with pkgs; [
     ];
   };
@@ -183,6 +194,11 @@
   # $ nix search wget
   nixpkgs.config.allowUnfree = true;
   environment.systemPackages = with pkgs; [
+    # For virtual machine use windows
+    dmidecode
+    qemu
+    quickemu
+    #
     niri
     vim-full # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
     ## icon theme
