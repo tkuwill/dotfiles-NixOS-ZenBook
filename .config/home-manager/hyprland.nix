@@ -21,7 +21,7 @@
       env = "XCURSOR_SIZE,32";
       input = {
         kb_layout = "us";
-        follow_mouse = 1;
+        follow_mouse = 2;
         natural_scroll = "yes";
         sensitivity = 0; # -1.0 - 1.0, 0 means no modification.
         touchpad = {
@@ -56,11 +56,11 @@
        preserve_split = yes
       }
       master {
-        new_is_master = true
+        new_status = master
       }
        gestures {
         workspace_swipe = on
-        workspace_swipe_fingers = 4
+        workspace_swipe_fingers = 3
       }
       windowrule = float, ^(nm-connection-editor)$
       windowrulev2 = float,class:^(nm-connection-editor)$,title:^(Network Connections)$
