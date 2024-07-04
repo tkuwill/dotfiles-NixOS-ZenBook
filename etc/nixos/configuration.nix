@@ -82,8 +82,11 @@
   programs.hyprland.enable = true;
   programs.hyprland.xwayland.enable = true;
   programs.hyprland.portalPackage = pkgs.xdg-desktop-portal-hyprland;
+  programs.hyprlock.enable = true;
+  services.hypridle.enable = true;
   # programs.hyprland.xwayland.hidpi = true;
   security.pam.services.swaylock = { };
+  security.pam.services.hyprlock = { };
   services.pipewire.enable = true;
   services.pipewire.wireplumber.enable = true;
   #river 
@@ -142,9 +145,9 @@
   '';
 
   ## Lock screen before suspend
-  services.physlock.enable = true;
-  services.physlock.lockOn.suspend = true;
-  services.physlock.lockMessage = "Welcome Back will";
+  # services.physlock.enable = true;
+  # services.physlock.lockOn.suspend = true;
+  # services.physlock.lockMessage = "Welcome Back will";
   # Sound and media keys
   sound.mediaKeys.enable = true;
   # sudoedit's editor
@@ -154,7 +157,7 @@
   nixpkgs.config.packageOverrides = pkgs: {
     vaapiIntel = pkgs.vaapiIntel.override { enableHybridCodec = true; };
   };
-  hardware.opengl = {
+  hardware.graphics = {
     enable = true;
     extraPackages = with pkgs; [
       intel-media-driver # LIBVA_DRIVER_NAME=iHD
