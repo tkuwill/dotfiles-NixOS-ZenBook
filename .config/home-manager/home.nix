@@ -14,6 +14,8 @@
     ./dunst.nix
     ./foot.nix
     ./hyprland.nix
+    ./hyprlock.nix
+    ./hypridle.nix
     ./imv.nix
     ./newsboat.nix
     ./swaylock.nix
@@ -59,6 +61,7 @@
     # '')
     pkgs.parted
     pkgs.hugo
+    pkgs.jiten
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage

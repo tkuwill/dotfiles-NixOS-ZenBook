@@ -108,8 +108,8 @@
       bind=SUPER, Space, movefocus, l
       bind=SUPER, K, movefocus, u
       bind=SUPER, J, movefocus, d
-      bind=SUPER,h,exec, hyprctl dispatch splitratio -0.1 # left
-      bind=SUPER,l,exec, hyprctl dispatch splitratio 0.1 # right
+      bind=SUPER,h,exec, hyprctl dispatch splitratio exact 0.1
+      bind=SUPER,l,exec, hyprctl dispatch splitratio 0.1 
       bind=SUPER,Return,movewindow,l
       bind=SUPERSHIFT,left,movewindow,l
       bind=SUPERSHIFT,right,movewindow,r
