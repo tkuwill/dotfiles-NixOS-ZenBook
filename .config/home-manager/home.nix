@@ -13,9 +13,9 @@
     ./bottom/bottom.nix
     ./dunst.nix
     ./foot.nix
-    ./hyprland.nix
-    ./hyprlock.nix
-    ./hypridle.nix
+    ./hypr/hyprland.nix
+    # ./hyprlock.nix
+    ./hypr/hypridle.nix
     ./imv.nix
     ./newsboat.nix
     ./swaylock.nix
@@ -83,6 +83,7 @@
     "${config.xdg.configHome}/mpv/input.conf".text = builtins.readFile ./mpv/input.conf;
     "${config.xdg.configHome}/mpv/script-opts/quality-menu.conf".text = builtins.readFile ./mpv/script-opts/quality-menu.conf;
     "${config.xdg.configHome}/mpv/script-opts/thumbfast.conf".text = builtins.readFile ./mpv/script-opts/thumbfast.conf;
+    "${config.xdg.configHome}/hypr/hyprlock.conf".text = builtins.readFile ./hypr/hyprlock.conf;
   };
 
   # You can also manage environment variables but you will have to manually
