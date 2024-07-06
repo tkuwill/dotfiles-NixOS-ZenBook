@@ -206,7 +206,7 @@
     vim-full # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
     ## icon theme
     glib
-    gnome.adwaita-icon-theme
+    adwaita-icon-theme
     # cursor
     comixcursors.Slim_Green
     # polkit-authentication
@@ -375,18 +375,18 @@
     gnome-photos
     gnome-tour
     gnome-console
-  ]) ++ (with pkgs.gnome; [
+    gnome.gnome-maps
+    gnome.gnome-music
+    gnome.tali
+    gnome.iagno
+    gnome.hitori
+    gnome.atomix
+  ]) ++ (with pkgs; [
     cheese
-    gnome-music
-    gnome-maps
     gnome-terminal
     epiphany
     geary
     totem
-    tali
-    iagno
-    hitori
-    atomix
     nautilus
   ]);
 

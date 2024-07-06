@@ -108,8 +108,8 @@
       bind=SUPER, Space, movefocus, l
       bind=SUPER, K, movefocus, u
       bind=SUPER, J, movefocus, d
-      bind=SUPER,h,exec, hyprctl dispatch splitratio exact 0.1
-      bind=SUPER,l,exec, hyprctl dispatch splitratio 0.1 
+      binde=SUPER,h,exec, hyprctl dispatch resizeactive -70 0
+      binde=SUPER,l,exec, hyprctl dispatch splitratio 0.05 
       bind=SUPER,Return,movewindow,l
       bind=SUPERSHIFT,left,movewindow,l
       bind=SUPERSHIFT,right,movewindow,r
@@ -138,6 +138,7 @@
       bind = $mainMod, mouse_up, workspace, e-1
       bindm = $mainMod, mouse:272, movewindow
       bindm = $mainMod, mouse:273, resizewindow
+      bindm=SUPER, ALT_L, resizewindow
 
       bind=ALT,R,submap,resize
       submap=resize
