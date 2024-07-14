@@ -60,8 +60,8 @@
         "custom/copy" = {
           format = "󰗊";
           tooltip = "false";
-          on-click-right = "/home/will/.config/tofi/scripts/clip.sh";
-          on-double-click-middle = "/home/will/.config/tofi/scripts/clipclean.sh";
+          on-click-right = "/home/will/.config/fzfmenu/scripts/clip.sh";
+          on-double-click-middle = "/home/will/.config/fzfmenu/scripts/clipclean.sh";
         };
         "clock" = {
           timezone = "Asia/Taipei";
