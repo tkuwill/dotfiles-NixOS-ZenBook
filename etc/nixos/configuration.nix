@@ -148,8 +148,6 @@
   # services.physlock.enable = true;
   # services.physlock.lockOn.suspend = true;
   # services.physlock.lockMessage = "Welcome Back will";
-  # Sound and media keys
-  sound.mediaKeys.enable = true;
   # sudoedit's editor
   environment.variables.EDITOR = "vim";
 
@@ -173,9 +171,6 @@
 
   # Enable CUPS to print documents.
   services.printing.enable = true;
-
-  # Enable sound.
-  sound.enable = true;
   hardware.pulseaudio.enable = true;
 
   # Enable touchpad support (enabled default in most desktopManager).
@@ -230,10 +225,12 @@
     swappy
     slurp
     # cli-tools
+    alsa-utils
     acpi
     bat
     cmus
     dialog
+    fastfetch
     fbterm # for cjk in tty
     git
     imv # cli-img-viewer
@@ -245,7 +242,6 @@
     lm_sensors
     lazygit
     libnotify
-    neofetch
     newsboat
     python3
     playerctl
@@ -265,7 +261,8 @@
     xdg-user-dirs
     # sys-tools
     # entertainment
-    gpodder
+    kdePackages.kasts
+    # gpodder
     # Internet
     firefox
     # chromium
@@ -300,6 +297,9 @@
     yt-dlp
     ffmpeg
     mpv
+    ## Qt library
+    libsForQt5.qt5.qtwayland
+    kdePackages.qtwayland
     # (pkgs.wrapOBS {
     #   plugins = with pkgs.obs-studio-plugins; [
     #     wlrobs
@@ -333,27 +333,30 @@
 
   # Input method fcitx5
   i18n.inputMethod = {
-    enabled = "fcitx5";
+    type = "fcitx5";
+    enable = true;
+    fcitx5.waylandFrontend = true;
     fcitx5.addons = with pkgs; [
       fcitx5-mozc
+      fcitx5-rime
       fcitx5-gtk
       fcitx5-lua
-      fcitx5-rime
     ];
   };
 
 
   # Font
-  fonts.packages = with pkgs; [
-    noto-fonts
-    noto-fonts-cjk
-    noto-fonts-cjk-sans
-    noto-fonts-cjk-serif
-    noto-fonts-emoji
-    noto-fonts-extra
-    liberation_ttf
-    hackgen-nf-font # Nerd font used for terminal and waybar.
-  ];
+  fonts.packages = with pkgs;
+    [
+      noto-fonts
+      noto-fonts-cjk
+      noto-fonts-cjk-sans
+      noto-fonts-cjk-serif
+      noto-fonts-emoji
+      noto-fonts-extra
+      liberation_ttf
+      hackgen-nf-font # Nerd font used for terminal and waybar.
+    ];
   # Font configs
   fonts.fontconfig.defaultFonts.serif = [
     "Noto Serif CJK TC"
