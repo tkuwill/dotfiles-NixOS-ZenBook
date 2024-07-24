@@ -13,6 +13,7 @@
     ./bottom/bottom.nix
     ./dunst.nix
     ./foot.nix
+    ./fastfetch.nix
     ./hypr/hyprland.nix
     # ./hyprlock.nix
     ./hypr/hypridle.nix

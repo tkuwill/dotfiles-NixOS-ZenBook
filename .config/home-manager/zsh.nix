@@ -69,7 +69,7 @@
         "Hyprland"
         "vim"
         "rm -rf *"
-        "neofetch"
+        "fastfetch"
         "vifm"
         "joshuto"
         "newsboat"
