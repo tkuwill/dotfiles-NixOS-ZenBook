@@ -171,7 +171,7 @@
 
   # Enable CUPS to print documents.
   services.printing.enable = true;
-  hardware.pulseaudio.enable = true;
+  hardware.pulseaudio.enable = false;
 
   # Enable touchpad support (enabled default in most desktopManager).
   services.libinput.enable = true;
@@ -214,7 +214,7 @@
     gedit
     hyprpaper
     pavucontrol
-    symbola
+    # symbola
     swaylock-effects
     fuzzel
     j4-dmenu-desktop
@@ -265,15 +265,18 @@
     # gpodder
     # Internet
     firefox
+    google-chrome
+    vivaldi
+    vivaldi-ffmpeg-codecs
     # chromium
-    (chromium.override {
-      commandLineArgs = [
-        "--ozone-platform-hint=auto"
-        # "--gtk-version=4"
-        "--enable-wayland-ime"
-        "--enable-features=TouchpadOverscrollHistoryNavigation"
-      ];
-    })
+    # (chromium.override {
+    #   commandLineArgs = [
+    #     "--ozone-platform-hint=auto"
+    #     # "--gtk-version=4"
+    #     "--enable-wayland-ime"
+    #     "--enable-features=TouchpadOverscrollHistoryNavigation"
+    #   ];
+    # })
     thunderbird
     signal-desktop
     networkmanagerapplet
@@ -378,13 +381,13 @@
     gnome-photos
     gnome-tour
     gnome-console
-    gnome.gnome-maps
-    gnome.gnome-music
-    gnome.tali
-    gnome.iagno
-    gnome.hitori
-    gnome.atomix
   ]) ++ (with pkgs; [
+    gnome-maps
+    gnome-music
+    tali
+    iagno
+    hitori
+    atomix
     cheese
     gnome-terminal
     epiphany
