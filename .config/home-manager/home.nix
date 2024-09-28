@@ -14,14 +14,14 @@
     ./dunst.nix
     ./foot.nix
     ./fastfetch.nix
-    ./hypr/hyprland.nix
+    # ./hypr/hyprland.nix
     # ./hyprlock.nix
-    ./hypr/hypridle.nix
+    # ./hypr/hypridle.nix
     ./imv.nix
     ./newsboat.nix
-    ./swaylock.nix
+    # ./swaylock.nix
     ./tmux.nix
-    ./waybar.nix
+    # ./waybar.nix
     ./yazi/yazi.nix
     ./zathura.nix
     ./zoxide.nix
