@@ -14,14 +14,14 @@
     ./dunst.nix
     ./foot.nix
     ./fastfetch.nix
-    # ./hypr/hyprland.nix
-    # ./hyprlock.nix
-    # ./hypr/hypridle.nix
+    ./hypr/hyprland.nix
+    # ./hypr/hyprlock.nix
+    ./hypr/hypridle.nix
     ./imv.nix
     ./newsboat.nix
     # ./swaylock.nix
     ./tmux.nix
-    # ./waybar.nix
+    ./waybar.nix
     ./yazi/yazi.nix
     ./zathura.nix
     ./zoxide.nix
@@ -63,6 +63,7 @@
     pkgs.parted
     pkgs.hugo
     pkgs.jiten
+    pkgs.wiliwili
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage

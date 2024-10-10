@@ -61,7 +61,7 @@
   services.xserver =
     {
       enable = true;
-      # displayManager.gdm.enable = true;
+      displayManager.gdm.enable = true;
       desktopManager.gnome.enable = true;
     };
   # QEMU'sconfig
@@ -83,14 +83,12 @@
   services.xserver.dpi = 128;
   services.xserver.upscaleDefaultCursor = true;
   # hyprland config
-  # programs.hyprland.enable = true;
-  # programs.hyprland.xwayland.enable = true;
-  # programs.hyprland.portalPackage = pkgs.xdg-desktop-portal-hyprland;
-  # programs.hyprlock.enable = true;
-  # services.hypridle.enable = true;
-  # # programs.hyprland.xwayland.hidpi = true;
+  programs.hyprland.enable = true;
+  programs.hyprland.portalPackage = pkgs.xdg-desktop-portal-hyprland;
+  programs.hyprlock.enable = true;
+  services.hypridle.enable = true;
   # security.pam.services.swaylock = { };
-  # security.pam.services.hyprlock = { };
+  security.pam.services.hyprlock = { };
   #services.pipewire.wireplumber.enable = true;
   #security.rtkit.enable = true;
   services.pipewire = {
@@ -223,13 +221,13 @@
     foot
     font-awesome
     gedit
-    # hyprpaper
+    hyprpaper
     pavucontrol
     # symbola
     # swaylock-effects
     # fuzzel
-    # j4-dmenu-desktop
-    # waybar
+    j4-dmenu-desktop
+    waybar
     wl-clipboard
     # screenshots tools
     grim
@@ -263,7 +261,6 @@
     tree
     tlrc # For tldr, a modern and simpler man.
     tmux
-    zellij
     unar
     wget
     wirelesstools # for internet test
@@ -301,7 +298,6 @@
     ## For office, only use libreoffice-fresh package. 
     ## Bc in NixOS, libreoffice-fresh = libreoffice-still in archlinux
     libreoffice-fresh
-    coolreader # ebook reader
     font-manager
     zathura
     ## Dictionary
