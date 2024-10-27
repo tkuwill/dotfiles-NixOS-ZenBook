@@ -8,6 +8,7 @@
       monitor = "eDP-1,1920x1080@60,1280x0,auto";
       # Start when Hyprland launched
       exec-once = [
+        "hypridle"
         "thunar --daemon"
         "waybar"
         "wl-paste --type text --watch cliphist store #Stores only text data"
