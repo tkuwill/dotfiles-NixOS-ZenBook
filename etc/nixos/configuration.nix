@@ -52,18 +52,11 @@
   '';
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
   # For cosmic desktop environment
-  services.desktopManager.cosmic.enable = true;
-  services.displayManager.cosmic-greeter.enable = true;
-  services.flatpak.enable = true;
+  # services.desktopManager.cosmic.enable = true;
+  # services.displayManager.cosmic-greeter.enable = true;
+  # services.flatpak.enable = true;
   # Enable the X11 windowing system.
   # services.xserver.enable = true;
-  # FOR gnome
-  services.xserver =
-    {
-      enable = true;
-      displayManager.gdm.enable = true;
-      desktopManager.gnome.enable = true;
-    };
   # QEMU'sconfig
   virtualisation.libvirtd.enable = true;
   programs.virt-manager.enable = true;
@@ -382,25 +375,6 @@
     "Noto Color Emoji"
 
   ];
-  # Excluding some GNOME applications from the default install
-  environment.gnome.excludePackages = (with pkgs; [
-    gnome-photos
-    gnome-tour
-    gnome-console
-  ]) ++ (with pkgs; [
-    gnome-maps
-    gnome-music
-    tali
-    iagno
-    hitori
-    atomix
-    cheese
-    gnome-terminal
-    epiphany
-    geary
-    totem
-    nautilus
-  ]);
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
