@@ -70,7 +70,7 @@
 
 
   # Waydroid's config
-  virtualisation.waydroid.enable = false;
+  virtualisation.waydroid.enable = true;
   # Cursor size
   environment.variables.XCURSOR_SIZE = "32";
   services.xserver.dpi = 128;
