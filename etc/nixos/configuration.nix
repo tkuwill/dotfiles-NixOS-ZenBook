@@ -197,7 +197,6 @@
     # For virtual machine use windows
     dmidecode
     qemu
-    quickemu
     # niri
     vim-full # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
     ## icon theme
@@ -289,12 +288,12 @@
     shfmt
     ## For office, only use libreoffice-fresh package. 
     ## Bc in NixOS, libreoffice-fresh = libreoffice-still in archlinux
-    libreoffice-fresh
+    libreoffice-still
     font-manager
     zathura
     ## Dictionary
     tagainijisho # For EN to JP
-    wordbook # EN to EN dict
+    # wordbook # EN to EN dict
     # video player
     yt-dlp
     ffmpeg

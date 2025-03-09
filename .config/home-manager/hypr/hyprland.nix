@@ -88,7 +88,7 @@
       bind=SUPER_SHIFT, L, exec, [float;noanim;rounding 8;size 300 100] /home/will/.config/fzfmenu/scripts/calendar.sh
       bind=SUPER_SHIFT, B, exec, [float;noanim;rounding 8;size 300 200] /home/will/.config/fzfmenu/scripts/sys.sh
       bind=SUPER_SHIFT, D, exec, [float;noanim;rounding 8;size 300 250] /home/will/.config/fzfmenu/scripts/donotdisturb.sh
-      bind=SUPER, W, exec, /home/will/.config/tofi/scripts/shwork.sh
+      bind=SUPER, W, exec, /home/will/.config/fzfmenu/scripts/shwork.sh
       bind=SUPER, A, exec, hyprctl dispatch workspace e-1
       bind=SUPER, Z, exec, hyprctl dispatch workspace e+1
       bind=SUPER, Tab, exec, [float;noanim;rounding 8;size 600 400] /home/will/.config/fzfmenu/scripts/clientswitcher.sh

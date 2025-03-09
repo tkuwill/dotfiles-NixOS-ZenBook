@@ -36,7 +36,7 @@
         "custom/shwork" = {
           format = "󰕮";
           tooltip = "false";
-          on-click = "/home/will/.config/tofi/scripts/shwork.sh";
+          on-click = "/home/will/.config/fzfmenu/scripts/shwork.sh";
         };
         "hyprland/submap" = {
           format = "{}";
