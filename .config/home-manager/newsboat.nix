@@ -2,7 +2,7 @@
   programs.newsboat = {
     enable = true;
     autoReload = true;
-    browser = "firefox";
+    browser = "vivaldi";
     extraConfig = ''
       include /nix/var/nix/profiles/system/sw/share/doc/newsboat/contrib/colorschemes/universal-color
       unbind-key j

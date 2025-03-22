@@ -276,7 +276,7 @@
     #     "--enable-features=TouchpadOverscrollHistoryNavigation"
     #   ];
     # })
-    thunderbird
+    thunderbird-esr
     signal-desktop
     networkmanagerapplet
     # website developed
