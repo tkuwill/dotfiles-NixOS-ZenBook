@@ -59,8 +59,6 @@
         workspace_swipe = on
         workspace_swipe_fingers = 3
       }
-      windowrule = float, ^(nm-connection-editor)$
-      windowrulev2 = float,class:^(nm-connection-editor)$,title:^(Network Connections)$
       windowrulev2 = float,class:^(org.fcitx.)$,title:^(Fcitx Configuration)$
       windowrulev2 = float,class:^(GTK Application)$,title:^(Save File)$ 
       windowrulev2 = float,class:^(pavucontrol)$,title:^(Volume Control)$ 

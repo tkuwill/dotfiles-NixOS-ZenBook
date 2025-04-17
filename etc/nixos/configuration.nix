@@ -277,7 +277,7 @@
     #   ];
     # })
     thunderbird-esr
-    signal-desktop
+    signal-desktop-bin
     networkmanagerapplet
     # website developed
     nodePackages_latest.live-server
