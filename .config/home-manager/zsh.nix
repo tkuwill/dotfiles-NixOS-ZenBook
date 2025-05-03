@@ -25,12 +25,10 @@
       TIMEFMT = "real\t%E\nuser\t%U\nsys\t%S\ncpu\t%P";
 
     };
-    initExtraBeforeCompInit = ''
+    initContent = ''
       autoload -Uz promptinit
       promptinit
       zstyle ':completion:*' menu yes select
-    '';
-    initExtra = ''
       bindkey "\e[3~" delete-char
       bindkey "\E[1~" beginning-of-line
       bindkey "\E[4~" end-of-line
