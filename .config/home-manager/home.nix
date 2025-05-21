@@ -83,8 +83,8 @@
     "${config.xdg.configHome}/yazi/keymap.toml".text = builtins.readFile ./yazi/keymap.toml;
     "${config.xdg.configHome}/mpv/mpv.conf".text = builtins.readFile ./mpv/mpv.conf;
     "${config.xdg.configHome}/mpv/input.conf".text = builtins.readFile ./mpv/input.conf;
-    "${config.xdg.configHome}/mpv/script-opts/quality-menu.conf".text = builtins.readFile ./mpv/script-opts/quality-menu.conf;
-    "${config.xdg.configHome}/mpv/script-opts/thumbfast.conf".text = builtins.readFile ./mpv/script-opts/thumbfast.conf;
+    # "${config.xdg.configHome}/mpv/script-opts/quality-menu.conf".text = builtins.readFile ./mpv/script-opts/quality-menu.conf;
+    # "${config.xdg.configHome}/mpv/script-opts/thumbfast.conf".text = builtins.readFile ./mpv/script-opts/thumbfast.conf;
     "${config.xdg.configHome}/hypr/hyprlock.conf".text = builtins.readFile ./hypr/hyprlock.conf;
   };
 
