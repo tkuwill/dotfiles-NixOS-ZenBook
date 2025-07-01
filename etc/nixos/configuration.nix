@@ -93,7 +93,6 @@
   #   jack.enable = true;
   # };
   # services.pulseaudio.enable = true;
-
   # Waybar, mpv's custom builds
   nixpkgs.overlays = [
     (self: super: {
@@ -183,7 +182,7 @@
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.will = {
     isNormalUser = true;
-    extraGroups = [ "wheel" "audio" "video" "networkmanager" "input" "libvirtd" "kvm" "vboxusers" ]; # Enable ‘sudo’ for the user.
+    extraGroups = [ "seat" "wheel" "audio" "video" "networkmanager" "input" "libvirtd" "kvm" "vboxusers" ]; # Enable ‘sudo’ for the user.
     packages = with pkgs; [
     ];
   };
@@ -195,6 +194,7 @@
     # For virtual machine use windows
     dmidecode
     qemu
+    weston
     # niri
     vim-full # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
     ## icon theme
@@ -206,18 +206,24 @@
     mate.mate-polkit
     # WM needed
     cliphist
+    wl-clipboard
     dunst
     foot
     font-awesome
     gedit
     hyprpaper
     pavucontrol
-    # symbola
-    # swaylock-effects
-    # fuzzel
-    j4-dmenu-desktop
     waybar
-    wl-clipboard
+    j4-dmenu-desktop
+    # symbola
+    # labwc needed
+    fuzzel
+    clapboard
+    swaybg
+    swayidle
+    swaylock-effects
+    wlopm
+    # swaylock-effects
     # screenshots tools
     grim
     swappy
@@ -278,10 +284,10 @@
     signal-desktop-bin
     networkmanagerapplet
     # website developed
-    nodePackages_latest.live-server
+    # nodePackages_latest.live-server
     python311Packages.grip # Preview GitHub Markdown files like Readme locally before committing them
     # for vim-codefmt's engine
-    nodePackages_latest.js-beautify
+    # nodePackages_latest.js-beautify
     nixpkgs-fmt
     shfmt
     ## For office, only use libreoffice-fresh package. 
@@ -371,6 +377,25 @@
     "Noto Color Emoji"
 
   ];
+  #Labwc
+  programs.labwc.enable = true;
+  # KDE plasma
+  # services.displayManager.sddm.enable = true;
+  # services.displayManager.sddm.wayland.enable = true;
+  # services.desktopManager.plasma6.enable = true;
+  # environment.plasma6.excludePackages = with pkgs.kdePackages; [
+  # plasma-browser-integration
+  # konsole
+  # elisa
+  # kate
+  # ];
+  qt = {
+    enable = true;
+    platformTheme = "gnome";
+    style = "adwaita-dark";
+  };
+
+
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
