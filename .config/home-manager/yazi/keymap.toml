@@ -1,4 +1,4 @@
-[manager]
+[mgr]
 
 keymap = [
 	{ on = [ "<Esc>" ], run = "escape",             desc = "Exit visual mode, clear selected, or cancel search" },
@@ -130,7 +130,7 @@ keymap = [
 	{ on = [ "}" ], run = "tab_swap 1",  desc = "Swap the current tab with the next tab" },
 
 	# Tasks
-	{ on = [ "w" ], run = "tasks_show", desc = "Show the tasks manager" },
+	{ on = [ "w" ], run = "tasks_show", desc = "Show the tasks mgr" },
 
 	# Goto
 	{ on = [ "g", "h" ],       run = "cd ~",             desc = "Go to the home directory" },
@@ -146,9 +146,9 @@ keymap = [
 [tasks]
 
 keymap = [
-	{ on = [ "<Esc>" ], run = "close", desc = "Hide the task manager" },
-	{ on = [ "<C-q>" ], run = "close", desc = "Hide the task manager" },
-	{ on = [ "w" ],     run = "close", desc = "Hide the task manager" },
+	{ on = [ "<Esc>" ], run = "close", desc = "Hide the task mgr" },
+	{ on = [ "<C-q>" ], run = "close", desc = "Hide the task mgr" },
+	{ on = [ "w" ],     run = "close", desc = "Hide the task mgr" },
 
 	{ on = [ "k" ], run = "arrow -1", desc = "Move cursor up" },
 	{ on = [ "j" ], run = "arrow 1",  desc = "Move cursor down" },

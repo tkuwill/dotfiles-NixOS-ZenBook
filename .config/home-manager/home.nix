@@ -12,16 +12,16 @@
     ./bat.nix
     ./bottom/bottom.nix
     ./dunst.nix
-    ./foot.nix
+    ./foot/foot.nix
     ./fastfetch.nix
     ./hypr/hyprland.nix
     # ./hypr/hyprlock.nix
     ./hypr/hypridle.nix
     ./imv.nix
     ./newsboat.nix
-    # ./swaylock.nix
+    ./swaylock.nix
     ./tmux.nix
-    ./waybar.nix
+    ./waybar/waybar.nix
     ./yazi/yazi.nix
     ./zathura.nix
     ./zoxide.nix
@@ -86,6 +86,18 @@
     # "${config.xdg.configHome}/mpv/script-opts/quality-menu.conf".text = builtins.readFile ./mpv/script-opts/quality-menu.conf;
     # "${config.xdg.configHome}/mpv/script-opts/thumbfast.conf".text = builtins.readFile ./mpv/script-opts/thumbfast.conf;
     "${config.xdg.configHome}/hypr/hyprlock.conf".text = builtins.readFile ./hypr/hyprlock.conf;
+    "${config.xdg.configHome}/labwc/rc.xml".text = builtins.readFile ./labwc/rc.xml;
+    "${config.xdg.configHome}/labwc/menu.xml".text = builtins.readFile ./labwc/menu.xml;
+    "${config.xdg.configHome}/labwc/autostart".text = builtins.readFile ./labwc/autostart;
+    "${config.xdg.configHome}/labwc/shutdown".text = builtins.readFile ./labwc/shutdown;
+    "${config.xdg.configHome}/labwc/environment".text = builtins.readFile ./labwc/environment;
+    "${config.xdg.configHome}/labwc/themerc-override".text = builtins.readFile ./labwc/themerc-override;
+    "${config.xdg.configHome}/waybar/winconfig".text = builtins.readFile ./waybar/winconfig;
+    "${config.xdg.configHome}/waybar/winstyle.css".text = builtins.readFile ./waybar/winstyle.css;
+    "${config.xdg.configHome}/foot/labfoot.ini".text = builtins.readFile ./foot/labfoot.ini;
+    "${config.xdg.configHome}/fuzzel/fuzzel.ini".text = builtins.readFile ./fuzzel/fuzzel.ini;
+    "${config.xdg.configHome}/fuzzel/menufuzzel.ini".text = builtins.readFile ./fuzzel/menufuzzel.ini;
+    "${config.xdg.configHome}/clapboard/config.toml".text = builtins.readFile ./clapboard/config.toml;
   };
 
   # You can also manage environment variables but you will have to manually
@@ -127,9 +139,6 @@
     package = pkgs.adwaita-icon-theme;
     name = "Adwaita";
   };
-
-
-
 
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;

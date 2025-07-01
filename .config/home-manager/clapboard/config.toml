@@ -1,0 +1,6 @@
+launcher = [ "fuzzel", "-a", "center", "-w", "50", "-l", "20", "-d", "--layer=overlay", "-p", "Clipboard  " ]
+history_size = 250
+
+[favorites]
+# You can add your favorite clipboard pastes here like this:
+# "some key" = "some value"

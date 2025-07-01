@@ -60,18 +60,19 @@
       save = 99999;
       size = 99999;
       ignorePatterns = [
+        "yazi"
+        "yy"
+        "la"
         "rm *"
         "pkill *"
         "shutdown now"
         "reboot"
+        "labwc"
         "Hyprland"
         "vim"
         "rm -rf *"
         "fastfetch"
-        "vifm"
-        "joshuto"
         "newsboat"
-        "htop"
         "nmtui"
         "sudo intel_gpu_top"
         "tmux"
@@ -82,6 +83,7 @@
         "lazygit"
         "acpi"
         "pwd"
+        "z"
       ];
     };
   };

@@ -1,0 +1,126 @@
+{
+    "layer": "bottom",
+    "position": "bottom",
+    "mod": "dock",
+    "exclusive": true,
+    "gtk-layer-shell": true,
+    "margin-bottom": -1,
+    "passthrough": false,
+    "height": 41,
+    "modules-left": [
+        "custom/os_button",
+        "wlr/taskbar"
+    ],
+    "modules-center": [],
+    "modules-right": [
+	"idle_inhibitor",    
+        "custom/copy",
+        "tray",
+        "pulseaudio",
+        "network",
+        "battery",
+        "clock"
+    ],
+    "idle_inhibitor": {
+	"format": "{icon}",
+      "format-icons": {
+        "activated": [
+          "  󰒳"
+        ],
+        "deactivated": [
+          "  󰒲"
+        ]
+      }
+    },
+    "custom/copy": {
+        "format": "󰗊",
+        "on-click-right": "/home/will/.config/home-manager/fuzzel/scripts/clip.sh",
+        "on-double-click-middle": "/home/will/.config/home-manager/fuzzel/scripts/clipclean.sh",
+        "tooltip": false
+    },
+    "custom/os_button": {
+        "format": "",
+        "on-click": "fuzzel",
+        "tooltip": false
+    },
+    "wlr/taskbar": {
+        "format": "{icon}",
+        "icon-size": 40,
+        "spacing": 3,
+        "on-click-middle": "close",
+        "tooltip-format": "{title}",
+        "ignore-list": [],
+        "on-click": "activate"
+    },
+    "tray": {
+        "icon-size": 18,
+        "spacing": 3
+    },
+    "clock": {
+	"interval": 1,
+        "format": "{:%H:%M:%S}",
+        "format-alt": "{:%Y-%m-%d(%a)}",
+        "tooltip-format": "<tt><small>{calendar}</small></tt>",
+        "calendar": {
+            "mode": "months",
+            "format": {
+                "months": "<span color='#ffead3'><b>{}</b></span>",
+                "days": "<span color='#ecc6d9'><b>{}</b></span>",
+                "weeks": "<span color='#99ffdd'><b>W{}</b></span>",
+                "weekdays": "<span color='#ffcc66'><b>{}</b></span>",
+                "today": "<span color='#ff6699'><b><u>{}</u></b></span>"
+            }
+        },
+        "actions": {
+            "on-scroll-up": "shift_up",
+            "on-scroll-down": "shift_down"
+        }
+    },
+    "network": {
+        "on-click": "nm-connection-editor",
+        "format-wifi": " {icon}",
+        "format-ethernet": "  ",
+        "format-disconnected": "󰌙",
+        "format-icons": [
+            "󰤯 ",
+            "󰤟 ",
+            "󰤢 ",
+            "󰤢 ",
+            "󰤨 "
+        ]
+    },
+    "battery": {
+	"interval": 20,
+        "states": {
+            "good": 95,
+            "warning": 30,
+            "critical": 20
+        },
+        "format": "{icon} {capacity}%",
+        "format-charging": " {capacity}%",
+        "format-plugged": " {capacity}%",
+        "format-alt": "|󰁹 {time}|",
+        "format-icons": [
+            "󰂎",
+            "󰁺",
+            "󰁻",
+            "󰁼",
+            "󰁽",
+            "󰁾",
+            "󰁿",
+            "󰂀",
+            "󰂁",
+            "󰂂",
+            "󰁹"
+        ]
+    },
+    "pulseaudio": {
+        "format": "VOL {volume}%{icon} {format_source}",
+        "format-bluetooth": "{volume}% {icon} {format_source}",
+        "format-bluetooth-muted": " {icon} {format_source}",
+        "format-muted": "VOL 🔇 {format_source}",
+        "format-source": "{volume}%",
+        "format-source-muted": "",
+        "on-click": "pavucontrol"
+    }
+}

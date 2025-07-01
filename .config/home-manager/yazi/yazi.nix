@@ -9,7 +9,7 @@
       headsup = {
         disable_exec_warn = true;
       };
-      manager = {
+      mgr = {
         layout = [ 2 3 3 ];
         show_hidden = true;
         sort_by = "natural";
