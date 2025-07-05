@@ -1,0 +1,10 @@
+output "Chimei Innolux Corporation 0x14D5 Unknown" {
+  mode 1920x1080@60.007999 
+  position 0,0
+  scale 1.5
+  alias $INTERNAL
+}
+
+profile LaptopScreenOnly {
+  output $INTERNAL enable
+}

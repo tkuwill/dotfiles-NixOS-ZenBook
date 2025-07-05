@@ -3,9 +3,6 @@ dotfiles of NixOS on ZenBook -- labwc & hyprland
 
 (Only show screenshots in **labwc**.)
 
-![](/screenshots/labwc.png)
-
-
 ![](/screenshots/labwcfastfetch.png)
 
 ---
@@ -50,6 +47,8 @@ dotfiles of NixOS on ZenBook -- labwc & hyprland
                 - `hyprland.nix`
                 - `hyprlock.nix` -- not used.
                 - `hyprlock.conf` -- used to config **hyprlock**.
+            - `kanshi`
+                - `config`
             - `labwc`
                 - `autostart`
                 - `environment`

@@ -352,7 +352,7 @@
       <action name="Execute" command="~/.config/home-manager/fuzzel/scripts/clip.sh" />
     </keybind>
     <keybind key="W-S-Return">
-      <action name="Execute" command="foot -c ~/.config/foot/labfoot.ini" />
+      <action name="Execute" command="foot" />
     </keybind>
     <keybind key="W-p">
       <action name="Execute" command="fuzzel --config=~/.config/fuzzel/menufuzzel.ini" />

@@ -15,11 +15,18 @@ waybar -c ~/.config/waybar/winconfig -s ~/.config/waybar/winstyle.css &
 # Enable notifications. Typically GNOME/KDE application notifications go
 # through the org.freedesktop.Notifications D-Bus API and require a client such
 # as mako to function correctly. Thunderbird is an example of this.
+# screen scaling
+kanshi -c ~/.config/kanshi/config &
+# wallpaper
 swaybg -i ~/Pictures/background/wallpaper.jpg >/dev/null 2>&1 &
+# notification
 dunst &
+# file manager
 thunar --daemon &
+# clipboard
 wl-paste --watch cliphist store &
 # clapboard --record >/dev/null 2>&1 &
+# input method
 fcitx5 >/dev/null 2>&1 &
 /home/will/.dwm/lowbatremind.sh &
 /nix/store/$(ls -la /nix/store | grep 'mate-polkit' | grep '4096' | awk '{print $9}' | sed -n '$p')/libexec/polkit-mate-authentication-agent-1 &

@@ -20,11 +20,11 @@
 * {
 	text-shadow: none;
 	box-shadow: none;
-  border: none;
-  border-radius: 0;
+	border: none;
+        border-radius: 0;
 	font-family: "HackGen35ConsoleNF", "Ubuntu";
-  font-weight: 600;
-  font-size: 25px;
+        font-weight: 600;
+        font-size: 20px;
 	
 	
 }
@@ -51,6 +51,10 @@ tooltip label{
       padding: 0 10px;
 }
 
+#custom-copy:hover {
+	background: @bg_hover;
+}
+
 #idle_inhibitor {
       color: #FFFFFF;
       padding: 0 10px;
@@ -61,9 +65,13 @@ tooltip label{
       color: #2d3436;
 }
 
+#idle_inhibitor:hover {
+	background: @bg_hover;
+}
+
 #custom-os_button {
 	font-family: "HackGen35ConsoleNF";
-  font-size: 30px;
+        font-size: 25px;
 	padding-left: 12px;
 	padding-right: 20px;
 	transition: all 0.25s cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -104,7 +112,7 @@ tooltip label{
 }
 
 #taskbar button {
-	min-width: 40px;
+	min-width: 30px;
 	border-bottom: 3px solid rgba(255, 255, 255, 0.3);
 	margin-left: 2px;
 	margin-right: 2px;
@@ -169,6 +177,13 @@ tooltip label{
   padding-right: 3px;
 }
 
+#network:hover {
+ 	background: @bg_hover;
+}
+
+#battery:hover {
+ 	background: @bg_hover;
+}
 
 #clock {
   margin-left: 10px;
@@ -179,3 +194,5 @@ tooltip label{
 #clock:hover {
 	background: @bg_hover;
 }
+
+

@@ -6,14 +6,14 @@
     "gtk-layer-shell": true,
     "margin-bottom": -1,
     "passthrough": false,
-    "height": 41,
+    "height": 30,
     "modules-left": [
         "custom/os_button",
         "wlr/taskbar"
     ],
     "modules-center": [],
     "modules-right": [
-	"idle_inhibitor",    
+	"idle_inhibitor", 
         "custom/copy",
         "tray",
         "pulseaudio",
@@ -36,16 +36,17 @@
         "format": "󰗊",
         "on-click-right": "/home/will/.config/home-manager/fuzzel/scripts/clip.sh",
         "on-double-click-middle": "/home/will/.config/home-manager/fuzzel/scripts/clipclean.sh",
-        "tooltip": false
+        "tooltip": "Clipboard"
     },
     "custom/os_button": {
         "format": "",
         "on-click": "fuzzel",
+        "on-click-right": "/home/will/.config/home-manager/fuzzel/scripts/powermenu.sh",
         "tooltip": false
     },
     "wlr/taskbar": {
         "format": "{icon}",
-        "icon-size": 40,
+        "icon-size": 30,
         "spacing": 3,
         "on-click-middle": "close",
         "tooltip-format": "{title}",
@@ -78,6 +79,7 @@
     },
     "network": {
         "on-click": "nm-connection-editor",
+        "on-click-right": "/home/will/.config/home-manager/fuzzel/scripts/netshow.sh",
         "format-wifi": " {icon}",
         "format-ethernet": "  ",
         "format-disconnected": "󰌙",

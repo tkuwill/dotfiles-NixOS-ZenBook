@@ -98,6 +98,7 @@
     "${config.xdg.configHome}/fuzzel/fuzzel.ini".text = builtins.readFile ./fuzzel/fuzzel.ini;
     "${config.xdg.configHome}/fuzzel/menufuzzel.ini".text = builtins.readFile ./fuzzel/menufuzzel.ini;
     "${config.xdg.configHome}/clapboard/config.toml".text = builtins.readFile ./clapboard/config.toml;
+    "${config.xdg.configHome}/kanshi/config".text = builtins.readFile ./kanshi/config;
   };
 
   # You can also manage environment variables but you will have to manually

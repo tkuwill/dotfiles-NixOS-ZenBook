@@ -222,6 +222,8 @@
     swaybg
     swayidle
     swaylock-effects
+    wlr-randr
+    kanshi # setting hidpi screen
     wlopm
     # swaylock-effects
     # screenshots tools
