@@ -45,11 +45,10 @@
     #   useXkbConfig = true; # use xkbOptions in tty.
   };
   # Power management
-  services.logind.extraConfig = ''
-    # don’t shutdown when power button is short-pressed
-    HandlePowerKey=ignore
-    HandlePowerKeyLongPress=poweroff
-  '';
+  services.logind.settings.Login = {
+    HandlePowerKey = "ignore";
+    HandlePowerKeyLongPress = "poweroff";
+  };
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
   # For cosmic desktop environment
   # services.desktopManager.cosmic.enable = true;
