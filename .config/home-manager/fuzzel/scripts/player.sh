@@ -36,7 +36,7 @@ function player {
     elif [[ $selected = "Yt live" ]]; then 
         mpv --cache=no "$(urls)"
     elif [[ $selected = "Twitch live" ]]; then 
-	streamlink -p mpv -a '--no-cache' --twitch-disable-ads "$(turls)" 1080p60
+	streamlink -p mpv -a '--no-cache' "$(turls)" 1080p60
     elif [[ $selected = "Open_with_mpv_BiliBili" ]]; then 
         yt-dlp --cookies-from-browser firefox -o - "$(burls)" | mpv -
     elif [[ $selected = "BLive" ]]; then 
