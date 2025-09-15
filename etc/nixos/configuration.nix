@@ -285,10 +285,10 @@
     signal-desktop-bin
     networkmanagerapplet
     # website developed
-    # nodePackages_latest.live-server
-    python311Packages.grip # Preview GitHub Markdown files like Readme locally before committing them
+    nodePackages_latest.live-server
+    python313Packages.grip # Preview GitHub Markdown files like Readme locally before committing them
     # for vim-codefmt's engine
-    # nodePackages_latest.js-beautify
+    nodePackages_latest.js-beautify
     nixpkgs-fmt
     shfmt
     ## For office, only use libreoffice-fresh package. 
@@ -298,7 +298,7 @@
     zathura
     ## Dictionary
     tagainijisho # For EN to JP
-    # wordbook # EN to EN dict
+    wordbook # EN to EN dict
     # video player
     yt-dlp
     ffmpeg
